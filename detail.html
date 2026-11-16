@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quotes</title>
+  <style>
+    :root{--orange:#d94b16;--black:#111;--paper:#fff;--pad:clamp(20px,4.2vw,64px)}*{box-sizing:border-box;transition:color .3s ease-out,background-color .3s ease-out,border-color .3s ease-out}html{background:var(--paper);color:var(--black);font-family:Helvetica,Arial,sans-serif}body{margin:0;min-width:0}.site-header{padding:22px var(--pad) 0}.nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--black);border-bottom:1px solid var(--black)}.nav a{padding:14px 8px 13px 0;color:var(--black);font-size:14px;font-weight:700;text-decoration:none;letter-spacing:.02em}.nav a[aria-current=page]{color:var(--orange)}.nav a:focus-visible{outline:2px solid var(--orange);outline-offset:3px}.wrap{padding:clamp(40px,7vw,100px) var(--pad) 72px}.page-title{margin:0 0 24px;font-size:clamp(52px,10vw,140px);line-height:.82;letter-spacing:-.07em;font-weight:900}.reader{height:min(62vh,620px);min-height:300px;border:2px solid var(--black);display:flex;flex-direction:column;overflow:hidden}.progress-track{height:8px;flex:none;position:relative}.progress{height:100%;width:0;background:var(--orange)}.quote-scroll{overflow:auto;overscroll-behavior:contain;scrollbar-width:none;padding:clamp(20px,4vw,54px);font-size:clamp(16px,1.55vw,21px);line-height:1.5;font-weight:500}.quote-scroll::-webkit-scrollbar{display:none}.quote{margin:0 0 30px}.quote:last-child{margin-bottom:0}.quote-label{font-weight:800;margin:0 0 16px}.quote p{margin:0 0 1.5em}.quote p:last-child{margin-bottom:0}.hint{margin:14px 0 0;font-size:14px;font-weight:700}
+    html{transition:background-color .3s ease-out,color .3s ease-out}html.dark-theme{--paper:#111;--black:#fff}.nav a{position:relative;display:inline-block;width:max-content;max-width:100%}.nav a::after{position:absolute;right:8px;bottom:7px;left:0;height:2px;background:var(--orange);content:"";transform:scaleX(0);transform-origin:left;transition:transform .2s ease-out}.nav a:hover::after,.nav a:focus-visible::after{transform:scaleX(1)}.nav a:not(:hover):not(:focus-visible)::after{transform-origin:right;transition-duration:.3s}.reader{background:#fff;color:#111}.quote-scroll{color:#111}
+    .dark-theme .reader{background:#111;color:#fff}.dark-theme .quote-scroll{color:#fff}
+    .page-title{color:var(--orange)}.quote{margin:0 0 24px}.quote-toggle{display:flex;width:100%;align-items:center;justify-content:space-between;gap:18px;padding:0 0 12px;border:0;border-bottom:1px solid currentColor;background:transparent;color:inherit;text-align:left;font:inherit;font-weight:800;cursor:pointer}.quote-toggle-label{font-size:clamp(18px,2vw,26px)}.quote-chevron{flex:none;font-size:18px;transform:rotate(0);transition:transform .3s ease-out}.quote.is-open .quote-chevron{transform:rotate(180deg)}.quote-body{display:grid;grid-template-rows:0fr;transition:grid-template-rows .3s ease-out}.quote.is-open .quote-body{grid-template-rows:1fr}.quote-body-inner{min-height:0;overflow:hidden;padding-top:16px}.quote-body p{margin:0 0 1.5em}.quote-body p:last-child{margin-bottom:0}
+    .page-title{font-size:clamp(42px,5vw,72px);margin-bottom:18px}.wrap{padding-top:clamp(28px,3.5vw,50px)}
+    @media(max-width:600px){.site-header{padding-top:16px}.nav a{font-size:12px}.wrap{padding-top:55px}.reader{height:65vh;min-height:300px}.quote-scroll{padding:20px;font-size:16px}}
+    @media(max-width:600px){.wrap{padding-top:32px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <header class="site-header"><nav class="nav" aria-label="Page menu"><a href="index.html">Trainspotting</a><a href="detail.html" aria-current="page">Quotes</a><a href="about.html">Made</a></nav></header>
+  <main class="wrap">
+    <h1 class="page-title">Quotes</h1>
+    <section class="reader" aria-label="Quotes">
+      <div class="progress-track"><div class="progress" id="progress"></div></div>
+      <div class="quote-scroll" id="quote-scroll">
+        <article class="quote">
+          <button class="quote-toggle" type="button" aria-expanded="true"><span class="quote-toggle-label">1. Mark "Rent boy" Renton:</span><span class="quote-chevron" aria-hidden="true">▼</span></button>
+          <div class="quote-body"><div class="quote-body-inner"><p>[narrating] Choose Life. Choose a job. Choose a career. Choose a family. Choose a fucking big television, choose washing machines, cars, compact disc players and electrical tin openers. Choose good health, low cholesterol, and dental insurance. Choose fixed interest mortgage repayments. Choose a starter home. Choose your friends. Choose leisurewear and matching luggage. Choose a three piece suit on hire purchase in a range of fucking fabrics. Choose DIY and wondering who the fuck you are on Sunday morning. Choose sitting on that couch watching mind numbing, spirit crushing game shows, stuffing fucking junk food into your mouth. Choose rotting away at the end of it all, pissing your last in a miserable home, nothing more than an embarrassment to the selfish, fucked up brats you spawned to replace yourselves. Choose your future. Choose life...</p>
+          <p>But why would I want to do a thing like that? I chose not to choose life. I chose somethin' else. And the reasons? There are no reasons. Who needs reasons when you've got heroin?</p></div></div>
+        </article>
+        <article class="quote">
+          <button class="quote-toggle" type="button" aria-expanded="false"><span class="quote-toggle-label">2. Mark "Rent boy" Renton:</span><span class="quote-chevron" aria-hidden="true">▼</span></button>
+          <div class="quote-body"><div class="quote-body-inner"><p>Now I've justified this to myself in all sorts of ways. It wasn't a big deal, just a minor betrayal. Or we'd outgrown each other, you know, that sort of thing. But let's face it, I ripped them off, my so called mates. But Begbie, I couldn't give a shit about him. And Sick Boy, well he'd done the same to me, if he'd only thought of it first. And Spud, well okay, I felt sorry for Spud, he never hurt anybody. So why did I do it? I could offer a million answers, all false. The truth is that I'm a bad person. But, that's gonna change, I'm going to change. This is the last of that sort of thing. Now I'm cleaning up and I'm moving on, going straight and choosing life. I'm looking forward to it already. I'm gonna be just like you. The job, the family, the fucking big television. The washing machine, the car, the compact disc and electric tin opener, good health, low cholesterol, dental insurance, mortgage, starter home, leisure wear, luggage, three piece suite, DIY, game shows, junk food, children, walks in the park, nine to five, good at golf, washing the car, choice of sweaters, family Christmas, indexed pension, tax exemption, clearing gutters, getting by, looking ahead, the day you die.</p></div></div>
+        </article>
+        <article class="quote">
+          <button class="quote-toggle" type="button" aria-expanded="false"><span class="quote-toggle-label">3. Mark "Rent boy" Renton:</span><span class="quote-chevron" aria-hidden="true">▼</span></button>
+          <div class="quote-body"><div class="quote-body-inner"><p>It wasn't just the baby that died that day. Something inside Sick Boy was lost and never returned. It seemed that he had no theory with which to explain a moment like this... nor did I. Our only response was to keep on going and 'fuck everything'. pile misery upon misery, heap it up on a spoon and dissolve it with a drop of bile, then squirt it into a stinking, puerile vein and do it all over again. Keep on going, getting up, going out, robbing, stealing, fucking people over. Propelling ourselves with longing towards the day that it would all go wrong, because no matter how much you stash, or how much you steal you never have enough. No matter how often you go out and rob and fuck people over, you always need to get up and do it all over again.</p></div></div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <script>
+    let theme=new URLSearchParams(location.search).get('theme');try{if(!theme)theme=localStorage.getItem('trainspotting-theme')}catch{}theme=theme==='dark'?'dark':'light';document.documentElement.classList.toggle('dark-theme',theme==='dark');
+    document.querySelectorAll('.nav a').forEach(a=>{const u=new URL(a.href);if(theme==='dark')u.searchParams.set('theme','dark');else u.searchParams.delete('theme');a.href=u.pathname.split('/').pop()+u.search});
+    const box=document.getElementById('quote-scroll'),bar=document.getElementById('progress');
+    const quotes=[...document.querySelectorAll('.quote')];let openTimer;
+    quotes.forEach((item,index)=>{const button=item.querySelector('.quote-toggle');if(index===0)item.classList.add('is-open');item.addEventListener('pointerenter',()=>{clearTimeout(openTimer);openTimer=setTimeout(()=>{quotes.forEach(q=>{const opened=q===item;q.classList.toggle('is-open',opened);q.querySelector('.quote-toggle').setAttribute('aria-expanded',String(opened))});update()},100)});item.addEventListener('pointerleave',()=>{clearTimeout(openTimer);item.classList.remove('is-open');button.setAttribute('aria-expanded','false');update()})});
+    const bodyObserver=new ResizeObserver(update);quotes.forEach(item=>bodyObserver.observe(item.querySelector('.quote-body-inner')));
+    function update(){const max=box.scrollHeight-box.clientHeight,rate=max>0?Math.max(0,Math.min(1,box.scrollTop/max)):0;bar.style.width=`${rate*100}%`}
+    box.addEventListener('scroll',update,{passive:true});box.addEventListener('wheel',e=>{if(box.scrollHeight>box.clientHeight)e.stopPropagation()},{passive:true});addEventListener('resize',update);update();
+  </script>
+</body>
+</html>

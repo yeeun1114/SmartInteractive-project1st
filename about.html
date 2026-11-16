@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Made</title>
+  <style>
+    :root{--orange:#d94b16;--black:#111;--paper:#fff;--pad:clamp(20px,4.2vw,64px)}*{box-sizing:border-box;transition:color .3s ease-out,background-color .3s ease-out,border-color .3s ease-out}html{background:var(--paper);color:var(--black);font-family:Helvetica,Arial,sans-serif}body{margin:0;min-width:0}.site-header{padding:22px var(--pad) 0}.nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:2px solid var(--black);border-bottom:1px solid var(--black)}.nav a{padding:14px 8px 13px 0;color:var(--black);font-size:14px;font-weight:700;text-decoration:none;letter-spacing:.02em}.nav a[aria-current=page]{color:var(--orange)}.nav a:focus-visible{outline:2px solid var(--orange);outline-offset:3px}.wrap{padding:clamp(40px,7vw,100px) var(--pad) 72px}.page-title{margin:0 0 24px;font-size:clamp(52px,10vw,140px);line-height:.82;letter-spacing:-.07em;font-weight:900}.reveal-card{min-height:58vh;border-top:2px solid var(--black);border-bottom:2px solid var(--black);display:flex;flex-direction:column;justify-content:center;align-items:center;gap:clamp(20px,4vw,48px);padding:48px 0;text-align:center}.mask{overflow:hidden;max-width:100%}.reveal-line{margin:0;font-weight:800;font-size:clamp(21px,4.3vw,58px);line-height:1.18;letter-spacing:-.045em;transform:translateY(30px);visibility:hidden}.reveal-card.is-visible .reveal-line{visibility:visible;animation:rise .5s ease-out both}.reveal-card.is-visible .mask:nth-child(2) .reveal-line{animation-delay:.1s}.reveal-card.is-visible .mask:nth-child(3) .reveal-line{animation-delay:.2s}@keyframes rise{from{transform:translateY(30px)}to{transform:translateY(0)}}
+    html{transition:background-color .3s ease-out,color .3s ease-out}html.dark-theme{--paper:#111;--black:#fff}.nav a{position:relative;display:inline-block;width:max-content;max-width:100%}.nav a::after{position:absolute;right:8px;bottom:7px;left:0;height:2px;background:var(--orange);content:"";transform:scaleX(0);transform-origin:left;transition:transform .2s ease-out}.nav a:hover::after,.nav a:focus-visible::after{transform:scaleX(1)}.nav a:not(:hover):not(:focus-visible)::after{transform-origin:right;transition-duration:.3s}.reveal-card{background:#fff;color:#111}
+    .dark-theme .reveal-card{background:#111;color:#fff}
+    .page-title{font-size:clamp(42px,5vw,72px);margin-bottom:18px}.wrap{padding-top:clamp(28px,3.5vw,50px)}.image-compare{width:min(100%,250px);margin-bottom:28px}.reveal-card{min-height:26vh;gap:clamp(14px,1.8vw,24px);padding:24px 0}.reveal-line{font-size:clamp(18px,2.2vw,32px)}
+    .image-compare{position:relative;width:min(100%,420px);aspect-ratio:1000/1414;margin:0 auto 48px;overflow:hidden;user-select:none;-webkit-user-select:none;touch-action:pan-y}.compare-layer{position:absolute;inset:0;overflow:hidden}.compare-image{position:absolute;top:0;left:50%;width:auto;height:100%;max-width:none;transform:translateX(-50%);pointer-events:none;-webkit-user-drag:none;user-select:none}.compare-front{clip-path:inset(0 calc(100% - var(--split,50%)) 0 0)}.compare-handle{position:absolute;top:0;left:var(--split,50%);z-index:2;width:24px;height:100%;padding:0;border:0;background:transparent;transform:translateX(-50%);cursor:ew-resize;touch-action:none;user-select:none}.compare-handle::before{position:absolute;top:0;bottom:0;left:10px;width:4px;background:var(--orange);content:""}.compare-handle:focus-visible{outline:2px solid var(--orange);outline-offset:-2px}
+    @media(max-width:600px){.site-header{padding-top:16px}.nav a{font-size:12px}.wrap{padding-top:55px}.reveal-card{min-height:58vh;gap:22px}.reveal-line{font-size:clamp(20px,6vw,30px)}}
+    @media(max-width:600px){.wrap{padding-top:32px}.reveal-card{min-height:26vh;gap:14px;padding:20px 0}.reveal-line{font-size:clamp(18px,4.8vw,24px)}}
+    @media(prefers-reduced-motion:reduce){.reveal-line{visibility:visible;transform:none}.reveal-card.is-visible .reveal-line{animation:none}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;scroll-behavior:auto!important}}
+  </style>
+</head>
+<body>
+  <header class="site-header"><nav class="nav" aria-label="페이지 메뉴"><a href="index.html">Trainspotting</a><a href="detail.html">Quotes</a><a href="about.html" aria-current="page">Made</a></nav></header>
+  <main class="wrap">
+    <h1 class="page-title">Made</h1>
+    <figure class="image-compare" id="image-compare" aria-label="이미지 비교">
+      <div class="compare-layer"><img class="compare-image" src="134677898.1.jpg" alt="" draggable="false"></div>
+      <div class="compare-layer compare-front"><img class="compare-image" src="363191.jpg" alt="" draggable="false"></div>
+      <button class="compare-handle" id="compare-handle" type="button" role="slider" aria-label="이미지 비교 핸들" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"></button>
+    </figure>
+    <section class="reveal-card" id="reveal-card" aria-label="Made">
+      <div class="mask"><p class="reveal-line">Trainspotting</p></div>
+      <div class="mask"><p class="reveal-line">청춘의 한가운데에서 뻘짓을 한다는 것은 참 멋진일이라고 생각한다.</p></div>
+      <div class="mask"><p class="reveal-line">영화 &lt;Trainspotting&gt; 의 재개봉 포스터가 인상 깊다.</p></div>
+    </section>
+  </main>
+  <script>
+    let theme=new URLSearchParams(location.search).get('theme');try{if(!theme)theme=localStorage.getItem('trainspotting-theme')}catch{}theme=theme==='dark'?'dark':'light';document.documentElement.classList.toggle('dark-theme',theme==='dark');document.querySelectorAll('.nav a').forEach(a=>{const u=new URL(a.href);if(theme==='dark')u.searchParams.set('theme','dark');else u.searchParams.delete('theme');a.href=u.pathname.split('/').pop()+u.search});
+    const card=document.getElementById('reveal-card'),reduce=matchMedia('(prefers-reduced-motion: reduce)');
+    if(reduce.matches){card.classList.add('is-visible')}else{const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){card.classList.add('is-visible');observer.disconnect()}}},{rootMargin:'0px 0px -15% 0px',threshold:0});observer.observe(card)}
+    const stage=document.getElementById('image-compare'),handle=document.getElementById('compare-handle');let dragging=false;
+    function setSplit(clientX){const rect=stage.getBoundingClientRect(),x=Math.max(0,Math.min(rect.width,clientX-rect.left)),value=rect.width?x/rect.width*100:50;stage.style.setProperty('--split',`${value}%`);handle.setAttribute('aria-valuenow',String(Math.round(value)))}
+    handle.addEventListener('pointerdown',event=>{dragging=true;handle.setPointerCapture(event.pointerId);event.preventDefault()});
+    handle.addEventListener('pointermove',event=>{if(dragging)setSplit(event.clientX)});
+    handle.addEventListener('pointerup',event=>{dragging=false;if(handle.hasPointerCapture(event.pointerId))handle.releasePointerCapture(event.pointerId)});
+    handle.addEventListener('pointercancel',()=>{dragging=false});
+  </script>
+</body>
+</html>
